@@ -1,5 +1,5 @@
 <h1>
-  <img src="./logo.png" alt="Obsidian Void Logo" width="60" align="left" style="margin-right: 15px;" />
+<img src="https://raw.githubusercontent.com/mohammadhasanii/obsidian-void/master/logo.png" >
   Obsidian Void
 </h1>
 <br>
@@ -7,8 +7,7 @@
 One theme, infinite consistency. Focus on code, not on choosing colors.
 </h3>
 
-![Obsidian Void Theme Preview](./demo-extension.png)
-
+![Obsidian Void Theme Preview](https://raw.githubusercontent.com/mohammadhasanii/obsidian-void/master/demo-extension.png)
 
 
 ---
