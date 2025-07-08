@@ -1,5 +1,5 @@
 <h1>
-<img src="https://raw.githubusercontent.com/mohammadhasanii/obsidian-void/master/logo.png" >
+  <img src="https://raw.githubusercontent.com/mohammadhasanii/obsidian-void/master/logo.png" alt="Obsidian Void Logo" width="60" align="left" style="margin-right: 15px;" />
   Obsidian Void
 </h1>
 <br>
