@@ -1,0 +1,30 @@
+name: Deploy VS Code Extension
+
+# این ورک‌فلو زمانی اجرا می‌شود که یک push جدید به شاخه master ارسال شود
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. کد ریپازیتوری را دریافت می‌کند
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. محیط Node.js را آماده می‌کند
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      # 3. ابزار vsce را نصب می‌کند
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      # 4. با استفاده از توکنی که در Secrets ذخیره کردید، افزونه را منتشر می‌کند
+      - name: Publish extension
+        run: vsce publish -p ${{ secrets.VSCE_PAT }}
